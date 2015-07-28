@@ -1,9 +1,10 @@
 
 class Ship
 
-  attr_accessor :size, :direction
+  attr_accessor :position, :size, :direction
 
-  def initialize(size, direction)
+  def initialize(position, size, direction)
+    @position = position
     @size = size
     @direction = direction
     # @directions = ['North', 'South', 'East', 'West']
